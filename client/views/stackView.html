@@ -1,7 +1,19 @@
 <div>
 
-  <!-- <input ng-model='newElement' /> -->
-  <!-- <button>Submit</botton> -->
+  <form id='stackInput'>
+    <input ng-model='newElement' />
+    <div class='button'>
+      <button ng-click='push()'>Push</button>
+      <button ng-click='pop()'>Pop</button>
+    </div>
+  </form>
 
-  <div ng-repeat='element in stack'>{{ element }}</div>
+  <h3 class='button'>Max stack length: {{ data.len }}</h3>
+  <button ng-click='lenView()'>Change Length</button>
+
+  <h3>Stack</h3>
+
+  <div ng-repeat='element in data.stack track by $index' class='stack'>{{ element }}</div>
+
+  <span>{{ data.errorMessage }}</span>
 </div>

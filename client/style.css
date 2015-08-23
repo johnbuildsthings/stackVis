@@ -1,0 +1,13 @@
+.stack {
+  width: 200px;
+  border:1px solid black;
+}
+
+form{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.button {
+  margin-top:10px;
+}
